@@ -8,17 +8,10 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import AccountCircle from "@material-ui/icons/AccountCircle";
-import MenuIcon from "@material-ui/icons/Menu";
-import Button from "@material-ui/core/Button";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
 
 import './App.css';
 import logo from "./sp_logo.png";
-
+import DentistProduction from "./DentistProduction";
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -67,35 +60,10 @@ class App extends Component {
 
           </Toolbar>
         </AppBar>
-        <main>
-          <Grid container spacing={16}>
+        <main style={{ paddingTop: '5rem' }}>
+          <Grid container spacing={16} direction={'column'} align={'center'}>
             <Grid item>
-              <Card className={classes.card}>
-                <CardActionArea>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    title="Contemplative Reptile"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="headline" component="h2">
-                      Lizard
-                    </Typography>
-                    <Typography component="p">
-                      Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                      across all continents except Antarctica
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  <Button size="small" color="primary">
-                    Share
-                  </Button>
-                  <Button size="small" color="primary">
-                    Learn More
-                  </Button>
-                </CardActions>
-              </Card>
+              <DentistProduction/>
             </Grid>
           </Grid>
         </main>
