@@ -62,7 +62,7 @@ class App extends Component {
         </AppBar>
         <main style={{ paddingTop: '5rem' }}>
           <Grid container spacing={16} direction={'column'} align={'center'}>
-            <Grid item>
+            <Grid item align={'left'}>
               <DentistProduction/>
             </Grid>
           </Grid>
